@@ -1,0 +1,13 @@
+body{
+    background-color: aquamarine;
+}
+
+.comment{
+    gap: 4rem;
+    height: auto;
+    padding: 1rem;
+    color: white;
+}
+.para{
+    width: 60%;
+}

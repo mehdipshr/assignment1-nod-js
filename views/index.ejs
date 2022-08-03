@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>hi woooo</h1> 
+
+        <form action="/massage" method="post">
+            <input type="text" placeholder="massage" name="massage" required>
+            <button>post a massage</button>
+        </form>
+        <div>
+            <% if (data.length > 0) { %> 
+                <% data.forEach( comments => { %>
+                    <div class="comment">
+                        <p class="para"><%= comments.massage %></p>
+                    </div>
+                <% }) %>
+            <% } else { %> 
+                nothing is in DB 
+            <% } %>
+            
+        </div>
+        
+    </body>
+</html>
